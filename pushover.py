@@ -1,6 +1,6 @@
 import http.client, urllib
-token = os.environ ['TOKEN']
-user = os.environ ['USER']
+token = os.environ['TOKEN']
+user = os.environ['USER']
 conn = http.client.HTTPSConnection("api.pushover.net:443")
 conn.request("POST", "/1/messages.json",
   urllib.parse.urlencode({
