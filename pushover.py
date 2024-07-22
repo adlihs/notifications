@@ -1,4 +1,4 @@
-import http.client, urllib
+import http.client, urllib, os
 token = os.environ['TOKEN']
 user = os.environ['USER']
 conn = http.client.HTTPSConnection("api.pushover.net:443")
